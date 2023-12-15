@@ -15,3 +15,6 @@ package-install: # Install package in user environment
 
 package-reinstall: # Reinstall package in user environment
 	python3 -m pip install --user dist/*.whl --force-reinstall
+
+lint: # Run flake8 linter check
+	poetry run flake8 brain_games
