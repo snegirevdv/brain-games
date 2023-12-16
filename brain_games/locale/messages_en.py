@@ -1,9 +1,9 @@
-# welcome messages
+# Welcome messages
 WELCOME = "Welcome to the Brain Games!"
 ASK_NAME = "May I have your name? "
 GREETING = "Hello, {}!"
 
-# rules
+# Rules
 EVEN_RULES = ("Answer \"yes\" if the number is even, "
               "otherwise answer \"no\".")
 CALC_RULES = "What is the result of the expression?"
@@ -20,7 +20,7 @@ RULES: dict[str, str] = {
     "prime": PRIME_RULES,
 }
 
-# game
+# Ingame messages
 QUESTION = "Question: {}"
 USER_ANSWER = "Your answer: "
 CORRECT = "Correct!"

@@ -2,7 +2,7 @@
 from brain_games.cli.cli import welcome_user
 
 
-def main():
+def main() -> None:
     welcome_user()
 
 
