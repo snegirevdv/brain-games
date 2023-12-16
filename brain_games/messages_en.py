@@ -6,8 +6,10 @@ GREETING = "Hello, {}!"
 # rules
 EVEN_RULES = ("Answer \"yes\" if the number is even, "
               "otherwise answer \"no\".")
-RULES = {
+CALC_RULES = "What is the result of the expression?"
+RULES: dict[str, str] = {
     "even": EVEN_RULES,
+    "calc": CALC_RULES,
 }
 
 # game
