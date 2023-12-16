@@ -21,7 +21,7 @@ classifiers = [
 repository = "https://github.com/snegirevdv/python-project-49"
 
 [tool.poetry.dependencies]
-python = ">=3.12,<4.0"
+python = ">=3.11,<4.0"
 prompt = "^0.4.1"
 
 [tool.poetry.group.dev.dependencies]
