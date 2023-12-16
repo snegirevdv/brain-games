@@ -7,9 +7,11 @@ GREETING = "Hello, {}!"
 EVEN_RULES = ("Answer \"yes\" if the number is even, "
               "otherwise answer \"no\".")
 CALC_RULES = "What is the result of the expression?"
+GCD_RULES = "Find the greatest common divisor of given numbers."
 RULES: dict[str, str] = {
     "even": EVEN_RULES,
     "calc": CALC_RULES,
+    "gcd": GCD_RULES,
 }
 
 # game

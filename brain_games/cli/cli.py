@@ -1,5 +1,6 @@
 from prompt import string
-from brain_games.messages_en import WELCOME, ASK_NAME, GREETING
+
+from brain_games.locale.messages_en import WELCOME, ASK_NAME, GREETING
 
 
 def welcome_user() -> str:

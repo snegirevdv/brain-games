@@ -4,7 +4,7 @@ from typing import Callable
 # General settings
 ROUNDS = 3
 """Amount of rounds in the game."""
-LIMITS: tuple[int] = (1, 25)
+LIMITS: tuple[int] = (1, 100)
 """Tuple of minimal and maximal random number."""
 
 # Even
@@ -18,3 +18,5 @@ OPERATIONS: dict[str, Callable] = {
     "*": mul,
 }
 """Dictionary of ariphmetic functions."""
+
+# GCD

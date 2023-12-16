@@ -1,8 +1,9 @@
 from prompt import string
-from brain_games.handlers import GAME_HANDLERS
-from brain_games.settings import ROUNDS
-from brain_games.messages_en import (CONGRATULATION, CORRECT, LOSE,
-                                     RULES, QUESTION, USER_ANSWER)
+
+from brain_games.logic.handlers import GAME_HANDLERS
+from brain_games.logic.settings import ROUNDS
+from brain_games.locale.messages_en import (CONGRATULATION, CORRECT, LOSE,
+                                            RULES, QUESTION, USER_ANSWER)
 
 
 def start_game(username, game):
