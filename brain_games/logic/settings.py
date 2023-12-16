@@ -8,7 +8,7 @@ LIMITS: tuple[int] = (1, 100)
 """Tuple of minimal and maximal random number."""
 
 # Even
-EVEN_DELIMETER = 2
+EVEN_DIVIDER = 2
 """The number with which the estimated number is compared."""
 
 # Calculator

@@ -1,9 +1,9 @@
 from random import choice, randint
 from typing import Callable
 
-from brain_games.logic.settings import (EVEN_DELIMETER, LEN_LIMITS, LIMITS,
+from brain_games.logic.settings import (EVEN_DIVIDER, LEN_LIMITS, LIMITS,
                                         OPERATIONS, STEP_LIMITS)
-from brain_games.logic.utils import gcd
+from brain_games.logic.utils import gcd, is_prime
 
 
 def get_even_data():
@@ -13,7 +13,7 @@ def get_even_data():
     """
     number: int = randint(*LIMITS)
     question = str(number)
-    correct: str = "yes" if not number % EVEN_DELIMETER else "no"
+    correct: str = "yes" if not number % EVEN_DIVIDER else "no"
     return question, correct
 
 
@@ -60,10 +60,22 @@ def get_progression_data():
     return question, correct
 
 
+def get_prime_data():
+    """
+    Is prime handler.
+    Returns question and correct answer.
+    """
+    number: int = randint(*LIMITS)
+    correct: str = "yes" if is_prime(number) else "no"
+    question = str(number)
+    return question, correct
+
+
 GAME_HANDLERS: dict[str, Callable] = {
     "even": get_even_data,
     "calc": get_calc_data,
     "gcd": get_gcd_data,
     "progression": get_progression_data,
+    "prime": get_prime_data,
 }
 """Handlers list."""
