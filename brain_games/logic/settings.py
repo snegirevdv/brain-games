@@ -19,4 +19,8 @@ OPERATIONS: dict[str, Callable] = {
 }
 """Dictionary of ariphmetic functions."""
 
-# GCD
+# Progression
+LEN_LIMITS: tuple[int] = (5, 10)
+"""Limits for len of progression."""
+STEP_LIMITS: tuple[int] = (-10, 10)
+"""Limits of step of progression."""
