@@ -1,9 +1,6 @@
 from random import choice, randint
 
-from brain_games.settings import LIMITS
-
-LEN_LIMITS: tuple[int] = (5, 10)
-SIGNS: tuple[int] = (-1, 1)
+from brain_games.settings import LIMITS, LEN_LIMITS, SIGNS
 
 
 def get_progression_data() -> tuple[str]:
