@@ -10,6 +10,7 @@ OPERATIONS: dict[str, Callable] = {
     "*": operator.mul,
 }
 
+
 def get_data() -> tuple[str]:
     number1 = random.randint(*settings.LIMITS)
     number2 = random.randint(*settings.LIMITS)

@@ -1,11 +1,11 @@
 import math
 import random
 
-from brain_games.settings import LIMITS
+from brain_games import settings
 
 
 def get_data() -> tuple[str]:
-    number = random.randint(*LIMITS)
+    number = random.randint(*settings.LIMITS)
     correct = "yes" if is_prime(number) else "no"
     question = str(number)
     return question, correct

@@ -1,13 +1,12 @@
 import prompt
 
-from brain_games import handlers
-from brain_games import settings
+from brain_games import handlers, settings
 
 
 def start_game(username: str, game: handlers.Handler) -> None:
     print(game.get_rules())
     for _ in range(settings.ROUNDS):
-        question, correct = game.get_function()()
+        question, correct = game.get_data()()
         print(f"Question: {question}")
         answer: str = prompt.string("Your answer: ")
         if answer == correct:
@@ -18,4 +17,4 @@ def start_game(username: str, game: handlers.Handler) -> None:
                   f"Let's try again, {username}!")
             break
     else:
-        print("Congratulations, {username}!")
+        print(f"Congratulations, {username}!")
