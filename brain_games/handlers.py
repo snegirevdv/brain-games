@@ -11,14 +11,14 @@ class Handler(Enum):
     PROGRESSION = "progression"
     PRIME = "prime"
 
-    def get_function(self) -> Callable:
-        return FUNCTIONS[self]
+    def get_data(self) -> Callable:
+        return DATA[self]
 
     def get_rules(self) -> str:
         return RULES[self]
 
 
-FUNCTIONS: dict[str, Callable] = {
+DATA: dict[str, Callable] = {
     Handler.EVEN: even.get_data,
     Handler.CALC: calc.get_data,
     Handler.GCD: gcd.get_data,
