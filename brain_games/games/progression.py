@@ -1,20 +1,20 @@
-from random import choice, randint
+import random
 
-from brain_games.settings import LIMITS, LEN_LIMITS, SIGNS
+from brain_games import settings
+
+
+def generate_progression(length: int) -> list[str]:
+    start = random.randint(*settings.LIMITS)
+    step = random.randint(*settings.LIMITS) * random.choice(settings.SIGNS)
+    stop: int = start + length * step + 1
+    return list(map(str, range(start, stop, step)))
 
 
 def get_data() -> tuple[str]:
-    # Get progression
-    length = randint(*LEN_LIMITS)
-    start = randint(*LIMITS)
-    step = randint(*LIMITS) * choice(SIGNS)
-    stop: int = start + length * step + 1
-    progression: list[str] = list(map(str, range(start, stop, step)))
-
-    # Hide random element
-    hiden_index: int = choice(range(length))
+    length = random.randint(*settings.LEN_LIMITS)
+    progression = generate_progression(length)
+    hiden_index: int = random.choice(range(length))
     correct = progression[hiden_index]
     progression[hiden_index] = ".."
-
     question = " ".join(map(str, progression))
     return question, correct

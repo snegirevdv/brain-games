@@ -1,12 +1,11 @@
 #!/usr/bin/env_python3
-from brain_games.cli.cli import welcome_user
-from brain_games.cli.game_controller import start_game
+from brain_games.cli import cli, game_controller
 from brain_games.handlers import Handler
 
 
 def main() -> None:
-    username: str = welcome_user()
-    start_game(username=username, game=Handler.PROGRESSION)
+    username: str = cli.welcome_user()
+    game_controller.start_game(username=username, game=Handler.PROGRESSION)
 
 
 if __name__ == "__main__":

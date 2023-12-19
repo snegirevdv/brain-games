@@ -1,10 +1,8 @@
-from prompt import string
-
-from brain_games.messages import WELCOME, ASK_NAME, GREETING
+import prompt
 
 
 def welcome_user() -> str:
-    print(WELCOME)
-    username = string(ASK_NAME)
-    print(GREETING.format(username))
+    print("Welcome to the Brain Games!")
+    username = prompt.sting("May I have your name? ")
+    print(f"Hello, {username}!")
     return username

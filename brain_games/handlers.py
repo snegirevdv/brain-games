@@ -2,8 +2,6 @@ from enum import Enum
 from typing import Callable
 
 from brain_games.games import calc, even, gcd, prime, progression
-from brain_games.messages import (CALC_RULES, EVEN_RULES, GCD_RULES,
-                                            PRIME_RULES, PROGRESSION_RULES)
 
 
 class Handler(Enum):
@@ -29,9 +27,11 @@ FUNCTIONS: dict[str, Callable] = {
 }
 
 RULES: dict[str, str] = {
-    Handler.EVEN: EVEN_RULES,
-    Handler.CALC: CALC_RULES,
-    Handler.GCD: GCD_RULES,
-    Handler.PROGRESSION: PROGRESSION_RULES,
-    Handler.PRIME: PRIME_RULES,
+    Handler.EVEN: ("Answer \"yes\" if the number is even, "
+                   "otherwise answer \"no\"."),
+    Handler.CALC: "What is the result of the expression?",
+    Handler.GCD: "Find the greatest common divisor of given numbers.",
+    Handler.PROGRESSION: "What number is missing in the progression?",
+    Handler.PRIME: ("Answer \"yes\" if given number is prime. "
+                    "Otherwise answer \"no\"."),
 }
