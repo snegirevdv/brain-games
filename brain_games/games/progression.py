@@ -3,16 +3,10 @@ from random import choice, randint
 from brain_games.settings import LIMITS
 
 LEN_LIMITS: tuple[int] = (5, 10)
-"""Limits for len of progression."""
 SIGNS: tuple[int] = (-1, 1)
-"""Signs of numbers. -1 - negative, 1 - positive."""
 
 
 def get_progression_data() -> tuple[str]:
-    """
-    Progression handler.
-    Returns question and correct answer.
-    """
     # Get progression
     length: int = randint(*LEN_LIMITS)
     start: int = randint(*LIMITS)

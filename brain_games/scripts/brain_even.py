@@ -5,7 +5,6 @@ from brain_games.handlers import Handler
 
 
 def main() -> None:
-    """Run Even game"""
     username: str = welcome_user()
     start_game(username=username, game=Handler.EVEN)
 

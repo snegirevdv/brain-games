@@ -6,17 +6,11 @@ from brain_games.games.even import get_even_data
 from brain_games.games.gcd import get_gcd_data
 from brain_games.games.prime import get_prime_data
 from brain_games.games.progression import get_progression_data
-from brain_games.locale.messages_en import (CALC_RULES, EVEN_RULES, GCD_RULES,
+from brain_games.messages import (CALC_RULES, EVEN_RULES, GCD_RULES,
                                             PRIME_RULES, PROGRESSION_RULES)
 
 
 class Handler(Enum):
-    """
-    Handler returning data for a specific mini game.\n
-    Methods:
-    get_function - returns game-specific data;
-    get_rules - returns game rules.
-    """
     EVEN = "even"
     CALC = "calc"
     GCD = "gcd"
