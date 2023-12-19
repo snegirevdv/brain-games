@@ -11,16 +11,22 @@ from brain_games.locale.messages_en import (CALC_RULES, EVEN_RULES, GCD_RULES,
 
 
 class Handler(Enum):
+    """
+    Handler returning data for a specific mini game.\n
+    Methods:
+    get_function - returns game-specific data;
+    get_rules - returns game rules.
+    """
     EVEN = "even"
     CALC = "calc"
     GCD = "gcd"
     PROGRESSION = "progression"
     PRIME = "prime"
 
-    def get_function(self):
+    def get_function(self) -> Callable:
         return FUNCTIONS[self]
 
-    def get_rules(self):
+    def get_rules(self) -> str:
         return RULES[self]
 
 
