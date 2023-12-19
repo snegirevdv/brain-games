@@ -12,14 +12,6 @@ PROGRESSION_RULES = "What number is missing in the progression?"
 PRIME_RULES = ("Answer \"yes\" if given number is prime. "
                "Otherwise answer \"no\".")
 
-RULES: dict[str, str] = {
-    "even": EVEN_RULES,
-    "calc": CALC_RULES,
-    "gcd": GCD_RULES,
-    "progression": PROGRESSION_RULES,
-    "prime": PRIME_RULES,
-}
-
 # Ingame messages
 QUESTION = "Question: {}"
 USER_ANSWER = "Your answer: "

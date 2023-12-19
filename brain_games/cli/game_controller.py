@@ -1,20 +1,20 @@
 from prompt import string
 
-from brain_games.handlers import GAME_HANDLERS
+from brain_games.handlers import Handler
 from brain_games.settings import ROUNDS
 from brain_games.locale.messages_en import (CONGRATULATION, CORRECT, LOSE,
-                                            RULES, QUESTION, USER_ANSWER)
+                                            QUESTION, USER_ANSWER)
 
 
-def start_game(username: str, game: str) -> None:
+def start_game(username: str, game: Handler) -> None:
     """
     Starts game and controls game process.
     """
-    print(RULES[game])
+    print(game.get_rules())
 
     for _ in range(ROUNDS):
         # Get question body and correct answer from handler
-        question, correct = GAME_HANDLERS[game]()
+        question, correct = game.get_function()()
 
         # Get user's answer
         print(QUESTION.format(question))
