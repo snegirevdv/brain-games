@@ -2,7 +2,7 @@ from random import randint
 
 from brain_games.settings import LIMITS
 
-def get_even_data() -> tuple[str]:
+def get_data() -> tuple[str]:
     number: int = randint(*LIMITS)
     is_even: bool = not number % 2
     question = str(number)

@@ -3,7 +3,7 @@ from random import choice, randint
 from brain_games.settings import LIMITS, LEN_LIMITS, SIGNS
 
 
-def get_progression_data() -> tuple[str]:
+def get_data() -> tuple[str]:
     # Get progression
     length: int = randint(*LEN_LIMITS)
     start: int = randint(*LIMITS)

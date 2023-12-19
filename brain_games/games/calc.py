@@ -10,7 +10,7 @@ OPERATIONS: dict[str, Callable] = {
     "*": mul,
 }
 
-def get_calc_data() -> tuple[str]:
+def get_data() -> tuple[str]:
     number1 = randint(*LIMITS)
     number2 = randint(*LIMITS)
     sign: str = choice(list(OPERATIONS.keys()))

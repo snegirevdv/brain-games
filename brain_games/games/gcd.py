@@ -3,7 +3,7 @@ from random import randint
 from brain_games.settings import LIMITS
 
 
-def get_gcd_data() -> tuple[str]:
+def get_data() -> tuple[str]:
     number1: int = randint(*LIMITS)
     number2: int = randint(*LIMITS)
     question = f"{number1} {number2}"
