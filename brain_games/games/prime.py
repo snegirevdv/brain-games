@@ -5,8 +5,8 @@ from brain_games.settings import LIMITS
 
 
 def get_data() -> tuple[str]:
-    number: int = randint(*LIMITS)
-    correct: str = "yes" if is_prime(number) else "no"
+    number = randint(*LIMITS)
+    correct = "yes" if is_prime(number) else "no"
     question = str(number)
     return question, correct
 

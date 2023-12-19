@@ -5,9 +5,9 @@ from brain_games.settings import LIMITS, LEN_LIMITS, SIGNS
 
 def get_data() -> tuple[str]:
     # Get progression
-    length: int = randint(*LEN_LIMITS)
-    start: int = randint(*LIMITS)
-    step: int = randint(*LIMITS) * choice(SIGNS)
+    length = randint(*LEN_LIMITS)
+    start = randint(*LIMITS)
+    step = randint(*LIMITS) * choice(SIGNS)
     stop: int = start + length * step + 1
     progression: list[str] = list(map(str, range(start, stop, step)))
 
