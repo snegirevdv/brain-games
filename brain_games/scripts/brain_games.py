@@ -1,5 +1,5 @@
 #!/usr/bin/env_python3
-from brain_games.cli import cli
+from brain_games import cli
 
 
 def main() -> None:
