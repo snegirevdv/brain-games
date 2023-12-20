@@ -2,9 +2,9 @@
 ## Table of Contents
 1. [Description](#description)
 2. [Minimal Requirements](#minimal-requirements)
-3. [How to Install](#how-to-install)
-4. [How to Launch](#how-to-launch)
-5. [How to Play](#how-to-play)
+3. [How to install](#how-to-install)
+4. [How to launch](#how-to-launch)
+5. [How to play](#how-to-play)
 6. [Branches](#branches)
 ## Description
 A collection of simple console mini games designed to test and improve your mathematical skills:
