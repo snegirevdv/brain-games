@@ -18,7 +18,7 @@ def gen_question_answer() -> tuple[str]:
     hiden_index: int = random.choice(range(length))
     correct_answer = progression[hiden_index]
     progression[hiden_index] = ".."
-    question = " ".join(map(str, progression))
+    question = " ".join(progression)
     return question, correct_answer
 
 
