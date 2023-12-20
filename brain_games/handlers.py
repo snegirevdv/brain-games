@@ -18,7 +18,7 @@ class Handler(Enum):
         return RULES[self]
 
 
-DATA: dict[str, Callable] = {
+DATA: dict[Handler, Callable] = {
     Handler.EVEN: even.get_data,
     Handler.CALC: calc.get_data,
     Handler.GCD: gcd.get_data,
@@ -26,7 +26,7 @@ DATA: dict[str, Callable] = {
     Handler.PRIME: prime.get_data,
 }
 
-RULES: dict[str, str] = {
+RULES: dict[Handler, str] = {
     Handler.EVEN: ("Answer \"yes\" if the number is even, "
                    "otherwise answer \"no\"."),
     Handler.CALC: "What is the result of the expression?",
