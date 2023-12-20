@@ -13,6 +13,7 @@ A collection of simple console mini games designed to test and improve your math
 - **Greatest common divisor**: Find the greatest common divisor of two numbers.
 - **Prime number**: Check if a number is a prime.
 - **Progression**: Identify the missing element in a number progression.
+
 Easy to play, these games are ideal for all ages looking to sharpen their math prowess in a fun and interactive way.
 ## Minimal requirements
 - OS: Any OS supporting Python3 (e.g., Windows, MacOS, Linux).
