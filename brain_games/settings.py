@@ -1,13 +1,8 @@
 # General
-ROUNDS = 3
-"""Amount of rounds in the game."""
-
-LIMITS = (1, 100)
-"""Tuple of minimal and maximal random number."""
+ROUNDS_AMOUNT = 3
+NUMBER_LIMITS = (1, 100)
 
 # Progression
-LEN_LIMITS = (5, 10)
-"""Minimal and maximal len of progression."""
-
-SIGNS = (-1, 1)
-"""Positive and negative multipliers."""
+PROGRESSION_LEN_LIMITS = (5, 10)
+PROGRESSION_STEP_LIMITS = (1, 50)
+NUMERIC_SIGNS = (-1, 1)

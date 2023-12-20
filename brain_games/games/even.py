@@ -4,8 +4,8 @@ from brain_games import settings
 
 
 def get_data() -> tuple[str]:
-    number = randint(*settings.LIMITS)
+    number = randint(*settings.NUMBER_LIMITS)
     is_even: bool = not number % 2
     question = str(number)
-    correct = "yes" if is_even else "no"
-    return question, correct
+    correct_answer = "yes" if is_even else "no"
+    return question, correct_answer

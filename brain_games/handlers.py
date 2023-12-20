@@ -1,24 +1,24 @@
-from enum import Enum
+from enum import Enum, auto
 from typing import Callable
 
 from brain_games.games import calc, even, gcd, prime, progression
 
 
 class Handler(Enum):
-    EVEN = "even"
-    CALC = "calc"
-    GCD = "gcd"
-    PROGRESSION = "progression"
-    PRIME = "prime"
+    EVEN = auto()
+    CALC = auto()
+    GCD = auto()
+    PROGRESSION = auto()
+    PRIME = auto()
 
     def get_data(self) -> Callable:
-        return DATA[self]
+        return DATA_FUNCTIONS[self]
 
     def get_rules(self) -> str:
         return RULES[self]
 
 
-DATA: dict[Handler, Callable] = {
+DATA_FUNCTIONS: dict[Handler, Callable] = {
     Handler.EVEN: even.get_data,
     Handler.CALC: calc.get_data,
     Handler.GCD: gcd.get_data,

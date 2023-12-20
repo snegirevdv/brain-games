@@ -5,10 +5,10 @@ from brain_games import settings
 
 
 def get_data() -> tuple[str]:
-    number = random.randint(*settings.LIMITS)
-    correct = "yes" if is_prime(number) else "no"
+    number = random.randint(*settings.NUMBER_LIMITS)
+    correct_answer = "yes" if is_prime(number) else "no"
     question = str(number)
-    return question, correct
+    return question, correct_answer
 
 
 def is_prime(number: int) -> bool:
