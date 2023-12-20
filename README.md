@@ -1,7 +1,7 @@
 # Brain Games
 ## Table of Contents
 1. [Description](#description)
-2. [Minimal Requirements](#minimal-requirements)
+2. [Minimal requirements](#minimal-requirements)
 3. [How to install](#how-to-install)
 4. [How to launch](#how-to-launch)
 5. [How to play](#how-to-play)
