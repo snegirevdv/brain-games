@@ -20,3 +20,5 @@ OPERATIONS: dict[str, Callable] = {
     "-": operator.sub,
     "*": operator.mul,
 }
+
+RULES = "What is the result of the expression?"

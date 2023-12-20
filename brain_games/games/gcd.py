@@ -15,3 +15,6 @@ def gcd(a: int, b: int) -> int:
     while b != 0:
         a, b = b, a % b
     return a
+
+
+RULES = "Find the greatest common divisor of given numbers."

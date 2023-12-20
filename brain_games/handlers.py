@@ -27,11 +27,9 @@ DATA_FUNCTIONS: dict[Handler, Callable] = {
 }
 
 RULES: dict[Handler, str] = {
-    Handler.EVEN: ("Answer \"yes\" if the number is even, "
-                   "otherwise answer \"no\"."),
-    Handler.CALC: "What is the result of the expression?",
-    Handler.GCD: "Find the greatest common divisor of given numbers.",
-    Handler.PROGRESSION: "What number is missing in the progression?",
-    Handler.PRIME: ("Answer \"yes\" if given number is prime. "
-                    "Otherwise answer \"no\"."),
+    Handler.EVEN: even.RULES,
+    Handler.CALC: calc.RULES,
+    Handler.GCD: gcd.RULES,
+    Handler.PROGRESSION: progression.RULES,
+    Handler.PRIME: prime.RULES,
 }

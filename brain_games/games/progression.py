@@ -20,3 +20,6 @@ def get_data() -> tuple[str]:
     progression[hiden_index] = ".."
     question = " ".join(map(str, progression))
     return question, correct_answer
+
+
+RULES = "What number is missing in the progression?"

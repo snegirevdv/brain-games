@@ -9,3 +9,6 @@ def get_data() -> tuple[str]:
     question = str(number)
     correct_answer = "yes" if is_even else "no"
     return question, correct_answer
+
+
+RULES = ("Answer \"yes\" if the number is even, otherwise answer \"no\".")
