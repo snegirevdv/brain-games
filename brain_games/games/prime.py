@@ -4,7 +4,7 @@ import random
 from brain_games import settings
 
 
-def gen_question_answer() -> tuple[str]:
+def make_question_answer() -> tuple[str]:
     number = random.randint(*settings.NUMBER_LIMITS)
     correct_answer = "yes" if is_prime(number) else "no"
     question = str(number)

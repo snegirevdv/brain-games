@@ -12,12 +12,12 @@ class Handler(Enum):
     PRIME = "prime"
 
 
-GEN_QNA_FUNCTIONS: dict[Handler, Callable] = {
-    Handler.EVEN: even.gen_question_answer,
-    Handler.CALC: calc.gen_question_answer,
-    Handler.GCD: gcd.gen_question_answer,
-    Handler.PROGRESSION: progression.gen_question_answer,
-    Handler.PRIME: prime.gen_question_answer,
+QUESTION_ANSWER_MAKERS: dict[Handler, Callable] = {
+    Handler.EVEN: even.make_question_answer,
+    Handler.CALC: calc.make_question_answer,
+    Handler.GCD: gcd.make_question_answer,
+    Handler.PROGRESSION: progression.make_question_answer,
+    Handler.PRIME: prime.make_question_answer,
 }
 
 RULES: dict[Handler, str] = {
