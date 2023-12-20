@@ -1,11 +1,11 @@
 # Brain Games
+[![Actions Status](https://github.com/snegirevdv/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/snegirevdv/python-project-49/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/b14f493ee4c8c3a94c85/maintainability)](https://codeclimate.com/github/snegirevdv/python-project-49/maintainability)
 ## Table of Contents
 1. [Description](#description)
 2. [Minimal requirements](#minimal-requirements)
 3. [How to install](#how-to-install)
 4. [How to launch](#how-to-launch)
 5. [How to play](#how-to-play)
-6. [Branches](#branches)
 ## Description
 A collection of simple console mini games designed to test and improve your mathematical skills:
 - **Even number**: Determine if a given number is even.
@@ -16,8 +16,6 @@ A collection of simple console mini games designed to test and improve your math
 
 Easy to play, these games are ideal for all ages looking to sharpen their math prowess in a fun and interactive way.
 ## Minimal requirements
-- OS: Any OS supporting Python3 (e.g., Windows, MacOS, Linux).
-- Disk Space: 20 MB.
 - Python 3.11 or higher.
 - Poetry 1.7.1 or higher.
 ## How to install
@@ -74,5 +72,3 @@ brain-progression
 [![asciicast](https://asciinema.org/a/IUO1aoRUKcc3Pdqf1xWeOlA8j.svg)](https://asciinema.org/a/IUO1aoRUKcc3Pdqf1xWeOlA8j)
 ### Progression:
 [![asciicast](https://asciinema.org/a/iEAYB9N0TvTeorwTbZYZfm3Lw.svg)](https://asciinema.org/a/iEAYB9N0TvTeorwTbZYZfm3Lw)
-## Branches
-[![Actions Status](https://github.com/snegirevdv/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/snegirevdv/python-project-49/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/b14f493ee4c8c3a94c85/maintainability)](https://codeclimate.com/github/snegirevdv/python-project-49/maintainability)
