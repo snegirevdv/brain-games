@@ -3,7 +3,7 @@ import random
 from brain_games import settings
 
 
-def generate_progression(length: int) -> list[str]:
+def gen_progression(length: int) -> list[str]:
     start = random.randint(*settings.NUMBER_LIMITS)
     step_abs = random.randint(*settings.PROGRESSION_STEP_LIMITS)
     step_sign = random.choice(settings.NUMERIC_SIGNS)
@@ -12,9 +12,9 @@ def generate_progression(length: int) -> list[str]:
     return list(map(str, range(start, stop, step)))
 
 
-def get_data() -> tuple[str]:
+def gen_question_answer() -> tuple[str]:
     length = random.randint(*settings.PROGRESSION_LEN_LIMITS)
-    progression = generate_progression(length)
+    progression = gen_progression(length)
     hiden_index: int = random.choice(range(length))
     correct_answer = progression[hiden_index]
     progression[hiden_index] = ".."

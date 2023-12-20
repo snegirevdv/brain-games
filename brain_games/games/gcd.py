@@ -3,7 +3,7 @@ from random import randint
 from brain_games import settings
 
 
-def get_data() -> tuple[str]:
+def gen_question_answer() -> tuple[str]:
     number1 = randint(*settings.NUMBER_LIMITS)
     number2 = randint(*settings.NUMBER_LIMITS)
     question = f"{number1} {number2}"

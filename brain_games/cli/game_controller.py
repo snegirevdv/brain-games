@@ -7,7 +7,7 @@ from brain_games import handlers
 def start_game(username: str, game: handlers.Handler) -> None:
     print(handlers.RULES[game])
     for _ in range(settings.ROUNDS_AMOUNT):
-        question, correct_answer = handlers.DATA_FUNCTIONS[game]()
+        question, correct_answer = handlers.GEN_QNA_FUNCTIONS[game]()
         print(f"Question: {question}")
         user_answer = prompt.string("Your answer: ")
         if user_answer == correct_answer:

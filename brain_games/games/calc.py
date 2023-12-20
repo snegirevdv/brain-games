@@ -5,7 +5,7 @@ from typing import Callable
 from brain_games import settings
 
 
-def get_data() -> tuple[str]:
+def gen_question_answer() -> tuple[str]:
     number1 = random.randint(*settings.NUMBER_LIMITS)
     number2 = random.randint(*settings.NUMBER_LIMITS)
     sign: str = random.choice(list(OPERATIONS.keys()))
