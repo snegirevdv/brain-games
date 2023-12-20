@@ -3,6 +3,7 @@ import prompt
 from brain_games import settings
 from brain_games import handlers
 
+
 def welcome_user() -> str:
     print("Welcome to the Brain Games!")
     username = prompt.string("May I have your name? ")
@@ -11,7 +12,7 @@ def welcome_user() -> str:
 
 
 def start_game(username: str, game: handlers.Handler) -> None:
-    gen_question_answer = handlers.GEN_QNA_FUNCTIONS[game]
+    gen_question_answer = handlers.QUESTION_ANSWER_MAKERS[game]
     rules = handlers.RULES[game]
     print(rules)
     for _ in range(settings.ROUNDS_AMOUNT):
