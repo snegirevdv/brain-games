@@ -1,12 +1,10 @@
 import random
 
-from brain_games import game
-
-RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
+from brain_games import settings
 
 
 def make_question_answer() -> tuple[str]:
-    number = random.randint(*game.NUMBER_LIMITS)
+    number = random.randint(*settings.NUMBER_LIMITS)
     is_even: bool = not number % 2
     question = str(number)
     correct_answer = "yes" if is_even else "no"

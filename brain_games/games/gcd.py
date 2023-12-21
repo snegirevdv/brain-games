@@ -1,13 +1,11 @@
 import random
 
-from brain_games import game
-
-RULES = "Find the greatest common divisor of given numbers."
+from brain_games import settings
 
 
 def make_question_answer() -> tuple[str]:
-    number1 = random.randint(*game.NUMBER_LIMITS)
-    number2 = random.randint(*game.NUMBER_LIMITS)
+    number1 = random.randint(*settings.NUMBER_LIMITS)
+    number2 = random.randint(*settings.NUMBER_LIMITS)
     question = f"{number1} {number2}"
     correct_answer = str(find_gcd(number1, number2))
     return question, correct_answer

@@ -1,13 +1,11 @@
 import math
 import random
 
-from brain_games import game
-
-RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+from brain_games import settings
 
 
 def make_question_answer() -> tuple[str]:
-    number = random.randint(*game.NUMBER_LIMITS)
+    number = random.randint(*settings.NUMBER_LIMITS)
     correct_answer = "yes" if is_prime(number) else "no"
     question = str(number)
     return question, correct_answer
