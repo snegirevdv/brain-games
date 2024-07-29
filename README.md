@@ -58,7 +58,3 @@ brain-prime
 ```Shell
 brain-progression
 ```
-### Prime number:
-[![asciicast](https://asciinema.org/a/IUO1aoRUKcc3Pdqf1xWeOlA8j.svg)](https://asciinema.org/a/IUO1aoRUKcc3Pdqf1xWeOlA8j)
-### Progression:
-[![asciicast](https://asciinema.org/a/iEAYB9N0TvTeorwTbZYZfm3Lw.svg)](https://asciinema.org/a/iEAYB9N0TvTeorwTbZYZfm3Lw)
