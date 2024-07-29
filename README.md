@@ -4,7 +4,6 @@
 2. [Minimal requirements](#minimal-requirements)
 3. [How to install](#how-to-install)
 4. [How to launch](#how-to-launch)
-5. [How to play](#how-to-play)
 ## Description
 A collection of simple console mini games designed to test and improve your mathematical skills:
 - **Even number**: Determine if a given number is even.
@@ -38,7 +37,6 @@ make build
 ```Shell
 make package-install
 ```
-[![asciicast](https://asciinema.org/a/NgscvFGlFFd10SLUADsYPuytu.svg)](https://asciinema.org/a/NgscvFGlFFd10SLUADsYPuytu)
 ## How to launch
 ### Even number:
 ```Shell
@@ -60,13 +58,6 @@ brain-prime
 ```Shell
 brain-progression
 ```
-## How to play
-### Even number:
-[![asciicast](https://asciinema.org/a/SAB4cgOmgrK19xU2JVG9JTMq9.svg)](https://asciinema.org/a/SAB4cgOmgrK19xU2JVG9JTMq9)
-### Calculator:
-[![asciicast](https://asciinema.org/a/QeKRoWSHrg2qdsIk1uzgBcMeJ.svg)](https://asciinema.org/a/QeKRoWSHrg2qdsIk1uzgBcMeJ)
-### Greatest Common Divisor:
-[![asciicast](https://asciinema.org/a/KEFtpxG4WM2RAVAnm44lsva3W.svg)](https://asciinema.org/a/KEFtpxG4WM2RAVAnm44lsva3W)
 ### Prime number:
 [![asciicast](https://asciinema.org/a/IUO1aoRUKcc3Pdqf1xWeOlA8j.svg)](https://asciinema.org/a/IUO1aoRUKcc3Pdqf1xWeOlA8j)
 ### Progression:
