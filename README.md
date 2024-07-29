@@ -17,8 +17,6 @@ Easy to play, these games are ideal for all ages looking to sharpen their math p
 
 ### Technology Stack
 - **Programming Language**: Python
-- **Runtime Environment**: Node.js
-- **Testing**: pytest, unittest
 - **Linting and Formatting**: flake8, black
 - **Dependency Management**: poetry
 
