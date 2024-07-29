@@ -19,7 +19,7 @@ Easy to play, these games are ideal for all ages looking to sharpen their math p
 ## How to install
 1. Clone the project:
 ```Shell
-git clone https://github.com/snegirevdv/python-project-49.git
+git clone git@github.com:snegirevdv/brain-games.git
 ```
 2. Change into the project directory:
 ```Shell
