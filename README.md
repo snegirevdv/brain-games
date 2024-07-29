@@ -1,9 +1,10 @@
-# Brain Games
-## Table of Contents
+### Table of Contents
 1. [Description](#description)
-2. [Minimal requirements](#minimal-requirements)
-3. [How to install](#how-to-install)
-4. [How to launch](#how-to-launch)
+2. [Technology Stack](#technology-stack)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Testing](#testing)
+
 ## Description
 A collection of simple console mini games designed to test and improve your mathematical skills:
 - **Even number**: Determine if a given number is even.
@@ -13,6 +14,14 @@ A collection of simple console mini games designed to test and improve your math
 - **Progression**: Identify the missing element in a number progression.
 
 Easy to play, these games are ideal for all ages looking to sharpen their math prowess in a fun and interactive way.
+
+### Technology Stack
+- **Programming Language**: Python
+- **Runtime Environment**: Node.js
+- **Testing**: pytest, unittest
+- **Linting and Formatting**: flake8, black
+- **Dependency Management**: poetry
+
 ## Minimal requirements
 - Python 3.11 or higher.
 - Poetry 1.7.1 or higher.
